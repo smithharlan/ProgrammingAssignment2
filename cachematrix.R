@@ -3,6 +3,10 @@
 ## compute it repeatedly. This pair of functions caches the inverse 
 ## of a matrix.
 
+## This solution is based on the sample code in Assignment 2 for 
+## caching the mean of a vector and has been adapted to cache the
+## inverse of a matrix instead.
+
 ## The makeCacheMatrix function creates a special matrix which is 
 ## really a list containing functions to 1) set the value of the 
 ## matrix, 2) get the value of the matrix, 3) set the value of the
@@ -27,7 +31,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## The following function calculates the inverse of the special "matrix"
 ## created with the above function. However, it first checks to see 
-## if the inverse matrxi has already been calculated. If so, it gets the inverse 
+## if the inverse matrix has already been calculated. If so, it gets the inverse 
 ## matrix from the cache and skips the computation. Otherwise, it calculates 
 ## the inverse of the matrix and sets the value of the inverse matrix in 
 ## the cache via the setinverse function.
